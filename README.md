@@ -14,8 +14,8 @@ marked unreachable and causing no further events to be delivered. In this use ca
 - Index of events has been recorded in storage that if the action fails, the next invocation will retrieve from the same index, thus no events are lost.
 
 In order to demo how to using journaling API to consume events, we provide an end to end solution in this codelab, 
-- Event provider - we need to create an event provider to automatically generate events sending to Jouranling API or if you already have event provider you could skip this step
-- Event consumer - which is the main demo part of this codelab, we create another Project Firefly headless app to create cron jobs with alarms, we set up recurring jobs to pull from journalling API every x mins and write into project firefly storage.
+- Event provider - we need to create an event provider to automatically generate events sending to Journaling API or if you already have event provider you could skip this step
+- Event consumer - which is the main demo part of this codelab, we create another Project Firefly headless app to create cron jobs with alarms, we set up recurring jobs to pull from journaling API every x mins and write into project firefly storage.
 
 Event provider and event consumer both need to be deployed as a Project Firefly app under different namespace to make sure end to end workflow.
 So for that purpose, you may need to create two projects at Console follow below:

@@ -7,7 +7,7 @@ In this lesson, we will do the follow steps:
 - Scheduling cron jobs with alarms
 
 ### Create an event provider using Project Firefly template
-In this codelab, to provide an end to end solution, we need to have an event provider generating tons of events sending to journaling API, and the events provider need to be configurable to send x events/min to help user to test. so we choose to use OpenWhisk Alarms Package in Fierfly application to create 
+In this codelab, to provide an end to end solution, we need to have an event provider generating tons of events sending to journaling API, and the events provider need to be configurable to send x events/min to help user to test. so we choose to use OpenWhisk Alarms Package in Firefly application to create 
 cron jobs. 
 
 First, let's create a new firefly App from template by follow the below codelab:

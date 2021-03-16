@@ -1,6 +1,6 @@
 # Consume Events using Journaling API
 
-This codelab will guide you through creating cron jobs in a Firefly application to consume events using jouranling API
+This codelab will guide you through creating cron jobs in a Firefly application to consume events using journaling API
 
 ## User Story
 There is a class of Firefly apps in which customers want guarantees that the I/O Events are processed without losing any event especially 

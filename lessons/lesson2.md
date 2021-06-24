@@ -19,11 +19,11 @@ We will use [aio-lib-state](https://github.com/adobe/aio-lib-state) to store the
 npm i --save @adobe/aio-lib-state
 ``` 
 Then we're going to import it as well:
-```bash
-javascript const stateLib = require('@adobe/aio-lib-state');
+```javascript
+const stateLib = require('@adobe/aio-lib-state');
 ``` 
 We'll setup the write to storage inside the main function. 
-```bash
+```javascript
 async function saveToDb(params, new_events) {
   const stateCLient = await State.init()
 
@@ -40,7 +40,7 @@ async function saveToDb(params, new_events) {
 }
 ``` 
 also we will write down the event postion to ensure that if this action fails, the next invocation will retrieve from the same index instead of the new one. Thus no events are lost.
-```bash
+```javascript
 async function getLatestEventPosition(params) {
   const stateCLient = await State.init()
   const events = await stateCLient.get(params.db_event_key)

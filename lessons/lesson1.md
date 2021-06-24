@@ -30,7 +30,7 @@ Now we can set up fire event by follow [this](https://adobeio-codelabs-custom-ev
 Follow this codelab to automatically fire event by using runtime alarms package [Scheduling Cron Jobs with Alarms](https://adobeio-codelabs-alarms-adobedocs.project-helix.page/?src=/README.html)
 
 Your manifest file should look like this as below.
-```bash
+```yaml
 packages:
   __APP_PACKAGE__:
     license: Apache-2.0
